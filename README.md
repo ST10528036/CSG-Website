@@ -121,6 +121,7 @@ while maintaining a professional charitable image.
 
 ## Technologies Used
 
+- VSCode
 - HTML5
 - Git
 - GitHub
