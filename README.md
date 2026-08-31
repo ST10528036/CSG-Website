@@ -3,20 +3,17 @@
 ## Supercar Charity Organisation
 
 ---
+WEDE5020 
 
-## Student Information
+Formative 1 Part 1 
 
-**Student Name:** [Your Full Name]
+ST10528036
 
-**Student Number:** [Your Student Number]
+Javarne Moses
 
-**Course/Module:** [Module Name]
+Emeris Sandton
 
-**Lecturer:** [Lecturer Name]
-
-**Institution:** [Institution Name]
-
-**Academic Year:** 2026
+2026
 
 ---
 
