@@ -4,112 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>About CSG | Club Sport Goodwill</title>
 
+    <!-- Google Fonts: Orbitron (Wide Motorsport Sans-Serif) & Inter (Modern Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet linked in css/ folder -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header>
+    <!-- Accessible Site Header -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="CSG Homepage">CSG</a>
 
-        <div class="logo">
-            <a href="index.html">CSG</a>
+            <!-- Mobile Hamburger Toggle Button -->
+            <button 
+                type="button" 
+                class="nav-toggle" 
+                id="navToggle" 
+                aria-expanded="false" 
+                aria-controls="primaryNav" 
+                aria-label="Toggle navigation menu"
+            >
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <nav id="primaryNav" class="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="enquiry.html" class="nav-link">Enquiry</a></li>
+                    <li><a href="donate.html" class="nav-link btn-nav">Donate</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
-                <li><a href="donate.html">Donate</a></li>
-            </ul>
-        </nav>
-
     </header>
 
+    <!-- Main Content Area -->
+    <main class="main-container">
 
-    <main>
-
-        <!-- Page introduction -->
-        <section class="page-header">
-
-            <h1>About Club Sport Goodwill</h1>
-
-            <p>
-                Turning automotive passion into meaningful social impact.
-            </p>
-
+        <!-- Page Hero Banner -->
+        <section class="hero page-header">
+            <div class="hero-content">
+                <h1>About Club Sport Goodwill</h1>
+                <p>Turning automotive passion into meaningful social impact.</p>
+            </div>
         </section>
 
-
-        <!-- Organisation overview -->
-        <section class="content-section">
-
+        <!-- Organisation Overview Section -->
+        <section class="content-section card" style="margin-top: var(--spacing-lg);">
             <h2>Who We Are</h2>
-
             <p>
-                Club Sport Goodwill (CSG) is a concept-based charity
-                initiative designed for supercar enthusiasts and owners.
+                Club Sport Goodwill (CSG) is a concept-based charity initiative designed for supercar enthusiasts and owners.
             </p>
-
             <p>
-                The organisation brings together members of the luxury
-                automotive community to support charitable causes through
-                exclusive events and fundraising activities.
+                The organisation brings together members of the luxury automotive community to support charitable causes through exclusive events and fundraising activities.
             </p>
-
             <p>
-                While supercars are an important part of the experience,
-                the central purpose of CSG is to use the excitement and
-                passion surrounding these vehicles to create positive
-                social impact.
+                While supercars are an important part of the experience, the central purpose of CSG is to use the excitement and passion surrounding these vehicles to create positive social impact.
             </p>
-
         </section>
 
-
-        <!-- Mission -->
-        <section class="content-section">
-
+        <!-- Mission Section -->
+        <section class="content-section card" style="margin-top: var(--spacing-md);">
             <h2>Our Mission</h2>
-
             <p>
-                Our mission is to create memorable automotive experiences
-                that encourage generosity, community involvement and
-                meaningful charitable contributions.
+                Our mission is to create memorable automotive experiences that encourage generosity, community involvement, and meaningful charitable contributions.
             </p>
-
         </section>
 
-
-        <!-- Values -->
-        <section class="content-section">
-
+        <!-- Values Section -->
+        <section class="content-section card" style="margin-top: var(--spacing-md);">
             <h2>Our Values</h2>
-
-            <ul>
-                <li><strong>Community:</strong> Bringing automotive enthusiasts together.</li>
-                <li><strong>Generosity:</strong> Encouraging meaningful charitable giving.</li>
-                <li><strong>Transparency:</strong> Clearly communicating how funds are raised and used.</li>
-                <li><strong>Experience:</strong> Creating memorable events for supporters.</li>
-                <li><strong>Responsibility:</strong> Using the supercar community to support worthwhile causes.</li>
+            <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                <li><strong style="color: var(--color-accent);">Community:</strong> Bringing automotive enthusiasts together.</li>
+                <li><strong style="color: var(--color-accent);">Generosity:</strong> Encouraging meaningful charitable giving.</li>
+                <li><strong style="color: var(--color-accent);">Transparency:</strong> Clearly communicating how funds are raised and used.</li>
+                <li><strong style="color: var(--color-accent);">Experience:</strong> Creating memorable events for supporters.</li>
+                <li><strong style="color: var(--color-accent);">Responsibility:</strong> Using the supercar community to support worthwhile causes.</li>
             </ul>
-
         </section>
 
     </main>
 
-
-    <footer>
-        <p>&copy; 2026 Club Sport Goodwill. All rights reserved.</p>
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Club Sport Goodwill. All rights reserved. Driven for Charity.</p>
     </footer>
+
+    <!-- JavaScript Controller for Mobile Menu -->
+    <script src="script.js"></script>
 
 </body>
 </html>
