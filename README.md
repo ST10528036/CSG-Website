@@ -132,3 +132,17 @@ while maintaining a professional charitable image.
 - Plan the website structure.
 - Develop the visual identity.
 
+### Styling for Desktop Solution
+- For the appropriate CSS Styling, the following colours/themes used for this project would be Red, Black and White, background colour would be Black, Borders in Red, and Fonts in White. The following fonts added will be an Extended/Wide Sans-Serif with high-tech motorsport aesthetic for headings coloured in white  and Modern Sans-Serif for paragraphs also coloured in white.
+
+### Updated HTML (index.html)
+The updated HTML replaces the static navigation bar with an accessible, responsive header featuring a hamburger toggle button and custom ARIA attributes to ensure full screen reader compatibility. To support this functionality, JavaScript event listeners were integrated to dynamically animate the hamburger icon into an "X" close state, toggle menu visibility, prevent background page scrolling when opened, and allow keyboard navigation via the Escape key. Dedicated CSS media queries were added to handle off canvas drawer transitions and hover states using CSG's Red, Black, and White high tech motorsport's theme.
+
+## Screeshots of Website
+<img width="1888" height="910" alt="Screenshot 2026-10-05 110814_edited" src="https://github.com/user-attachments/assets/f7bb0e53-1b79-4f9d-b4b7-5a8f039e125d" />
+<img width="1887" height="909" alt="Screenshot 2026-10-05 110903_edited" src="https://github.com/user-attachments/assets/a40fc1c0-5d99-48e5-83ee-43f32c10ddab" />
+<img width="1888" height="905" alt="Screenshot 2026-10-05 110941_edited" src="https://github.com/user-attachments/assets/464caa21-74c6-4a0b-ad58-9bcdd2ed13ce" />
+<img width="1884" height="909" alt="Screenshot 2026-10-05 111012_edited" src="https://github.com/user-attachments/assets/ef84d7c6-8ecb-4ccb-a0d4-eb242b65fcfc" />
+
+
+
