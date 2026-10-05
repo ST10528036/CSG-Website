@@ -173,3 +173,99 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Sport Goodwill (CSG) | Supercar Charity Initiative</title>
+  
+  <!-- External Google Fonts: Orbitron (Wide Motorsport Sans-Serif) & Inter (Modern Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  
+  <!-- Linked External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo">CSG</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">Mission</a></li>
+          <li><a href="#tiers">Access Tiers</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <h1>Driven By Passion. Fuelled By Purpose.</h1>
+      <p>Uniting supercar enthusiasts to create real social impact. We leverage the passion of automotive culture to fund vital charitable causes worldwide.</p>
+      <a href="#tiers" class="btn">Explore Donorship</a>
+    </div>
+  </section>
+
+  <!-- Main Content & Tiers Layout -->
+  <main class="main-container" id="tiers">
+    <h2>Access Tiers & Experiences</h2>
+    <p>Your contribution directly supports targeted charity initiatives. Unlock exclusive event access based on your donation tier.</p>
+
+    <div class="tier-grid">
+      <!-- Tier 1 -->
+      <article class="card">
+        <div>
+          <h3>Supporter Access</h3>
+          <p>Free entry to general showcase areas and exhibition stalls.</p>
+        </div>
+        <button class="btn">Register Free</button>
+      </article>
+
+      <!-- Tier 2 -->
+      <article class="card">
+        <div>
+          <h3>Paddock Pass</h3>
+          <p>Includes VIP pitlane access, entry to owner Q&A sessions, and official merchandise.</p>
+        </div>
+        <button class="btn">Donate & Access</button>
+      </article>
+
+      <!-- Tier 3 -->
+      <article class="card">
+        <div>
+          <h3>Track Experience</h3>
+          <p>Exclusive passenger rides in select supercars alongside professional drivers.</p>
+        </div>
+        <button class="btn">Become a Benefactor</button>
+      </article>
+    </div>
+
+    <!-- Section with Responsive Image Implementation -->
+    <section style="margin-top: var(--spacing-lg);">
+      <h2>Next Event Showcase</h2>
+      <picture>
+        <!-- Mobile View Source -->
+        <source srcset="hero-mobile.jpg" media="(max-width: 600px)">
+        <!-- Tablet View Source -->
+        <source srcset="hero-tablet.jpg" media="(max-width: 1024px)">
+        <!-- Fallback / Desktop Image -->
+        <img src="hero-desktop.jpg" alt="CSG Supercar Charity Event Showcase" class="img-fluid" loading="lazy">
+      </picture>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Club Sport Goodwill (CSG). All rights reserved. Driven for Charity.</p>
+  </footer>
+
+</body>
+</html>

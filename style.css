@@ -1,0 +1,254 @@
+/* ==========================================================================
+   Club Sport Goodwill (CSG) - External Stylesheet
+   Color Palette: Black (#0d0d0d), Red (#ff1e27), White (#ffffff)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS Reset & Base Box-Sizing
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%; /* Default 16px */
+  scroll-behavior: smooth;
+}
+
+/* --------------------------------------------------------------------------
+   2. Design Tokens / Custom Properties
+   -------------------------------------------------------------------------- */
+:root {
+  /* Colors */
+  --bg-primary: #0d0d0d;
+  --bg-surface: #171717;
+  --color-text: #ffffff;
+  --color-accent: #ff1e27;
+  --color-accent-hover: #d60009;
+  --color-border: #ff1e27;
+  
+  /* Typography Scale */
+  --font-heading: 'Orbitron', 'Eurostile', 'Arial Black', sans-serif; /* Wide motorsport style */
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;           /* Modern clean sans-serif */
+  
+  /* Modular Type Scale (rem) */
+  --text-xs: 0.75rem;   /* 12px */
+  --text-sm: 0.875rem;  /* 14px */
+  --text-base: 1rem;    /* 16px */
+  --text-lg: 1.25rem;   /* 20px */
+  --text-xl: 1.75rem;   /* 28px */
+  --text-2xl: 2.5rem;   /* 40px */
+  --text-3xl: 3.5rem;   /* 56px */
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+
+  /* Structural */
+  --border-width: 2px;
+  --border-red: var(--border-width) solid var(--color-border);
+  --box-shadow-red: 0 0 15px rgba(255, 30, 39, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   3. Base Styles
+   -------------------------------------------------------------------------- */
+body {
+  background-color: var(--bg-primary);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, var(--text-3xl));
+  margin-bottom: var(--spacing-sm);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, var(--text-2xl));
+  margin-bottom: var(--spacing-sm);
+  border-bottom: var(--border-red);
+  padding-bottom: var(--spacing-xs);
+  display: inline-block;
+}
+
+h3 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--spacing-xs);
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------
+   4. Layout Structure (Flexbox & CSS Grid)
+   -------------------------------------------------------------------------- */
+.site-header {
+  border-bottom: var(--border-red);
+  padding: var(--spacing-sm) 5%;
+  background-color: var(--bg-primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 900;
+  color: var(--color-text);
+  border: var(--border-red);
+  padding: 0.25rem 0.75rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--spacing-md);
+  list-style: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--color-accent);
+}
+
+/* Hero Section */
+.hero {
+  border-bottom: var(--border-red);
+  padding: var(--spacing-lg) 5%;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(13,13,13,0.8) 0%, rgba(23,23,23,0.95) 100%);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Main Content Grid */
+.main-container {
+  max-width: 1200px;
+  margin: var(--spacing-lg) auto;
+  padding: 0 5%;
+  flex: 1;
+}
+
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+/* Card Component */
+.card {
+  background-color: var(--bg-surface);
+  border: var(--border-red);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-red);
+}
+
+/* Interactive Buttons */
+.btn {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  padding: 0.75rem 1.5rem;
+  color: var(--color-text);
+  background-color: var(--color-accent);
+  border: var(--border-red);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  margin-top: var(--spacing-sm);
+}
+
+.btn:hover {
+  background-color: var(--color-accent-hover);
+  box-shadow: var(--box-shadow-red);
+}
+
+.btn:focus {
+  outline: 2px solid var(--color-text);
+  outline-offset: 3px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Image Containers */
+.img-fluid {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: var(--border-red);
+}
+
+/* Footer */
+.site-footer {
+  border-top: var(--border-red);
+  padding: var(--spacing-md) 5%;
+  text-align: center;
+  font-size: var(--text-xs);
+  background-color: var(--bg-primary);
+}
+
+/* --------------------------------------------------------------------------
+   5. Media Queries for Fine-Tuning
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .nav-links {
+    gap: var(--spacing-sm);
+  }
+}
