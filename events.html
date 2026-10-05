@@ -4,101 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Events | Club Sport Goodwill</title>
 
+     <!-- Google Fonts: Orbitron (Wide Motorsport Sans-Serif) & Inter (Modern Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet linked in css/ folder -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
+    <!-- Accessible Site Header -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="CSG Homepage">CSG</a>
 
-        <div class="logo">
-            <a href="index.html">CSG</a>
+            <!-- Mobile Hamburger Toggle Button -->
+            <button 
+                type="button" 
+                class="nav-toggle" 
+                id="navToggle" 
+                aria-expanded="false" 
+                aria-controls="primaryNav" 
+                aria-label="Toggle navigation menu"
+            >
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <nav id="primaryNav" class="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="enquiry.html" class="nav-link">Enquiry</a></li>
+                    <li><a href="donate.html" class="nav-link btn-nav">Donate</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
-                <li><a href="donate.html">Donate</a></li>
-            </ul>
-        </nav>
-
     </header>
 
+    <!-- Main Content Area -->
+    <main class="main-container">
 
-    <main>
-
-        <section class="page-header">
-
-            <h1>Upcoming Events</h1>
-
-            <p>
-                Discover upcoming CSG automotive experiences.
-            </p>
-
+        <!-- Page Hero Banner -->
+        <section class="hero page-header">
+            <div class="hero-content">
+                <h1>Upcoming Events</h1>
+                <p>Discover upcoming CSG automotive experiences and exclusive supercar showcases.</p>
+            </div>
         </section>
 
+        <!-- Events Grid Layout -->
+        <section class="events tier-grid" style="margin-top: var(--spacing-lg);">
 
-        <section class="events">
-
-            <article class="event-card">
-
-                <h2>CSG Charity Supercar Showcase</h2>
-
-                <p><strong>Date:</strong> To be announced</p>
-
-                <p><strong>Location:</strong> To be announced</p>
-
-                <p>
-                    Join fellow enthusiasts for an exclusive showcase
-                    featuring exceptional performance vehicles while
-                    supporting a selected charitable cause.
-                </p>
-
-                <a href="enquiry.html" class="button">
+            <!-- Event Card 1 -->
+            <article class="card event-card">
+                <div>
+                    <h2>CSG Charity Supercar Showcase</h2>
+                    <p><strong>Date:</strong> To be announced</p>
+                    <p><strong>Location:</strong> To be announced</p>
+                    <p>
+                        Join fellow enthusiasts for an exclusive showcase featuring exceptional performance vehicles 
+                        while supporting a selected charitable cause.
+                    </p>
+                </div>
+                <a href="enquiry.html" class="btn button">
                     Register Interest
                 </a>
-
             </article>
 
-
-            <article class="event-card">
-
-                <h2>CSG Owners Experience</h2>
-
-                <p><strong>Date:</strong> To be announced</p>
-
-                <p><strong>Location:</strong> To be announced</p>
-
-                <p>
-                    A dedicated experience for supercar owners and
-                    enthusiasts to connect and participate in the CSG
-                    community.
-                </p>
-
-                <a href="enquiry.html" class="button">
+            <!-- Event Card 2 -->
+            <article class="card event-card">
+                <div>
+                    <h2>CSG Owners Experience</h2>
+                    <p><strong>Date:</strong> To be announced</p>
+                    <p><strong>Location:</strong> To be announced</p>
+                    <p>
+                        A dedicated experience for supercar owners and enthusiasts to connect and participate 
+                        in the CSG community.
+                    </p>
+                </div>
+                <a href="enquiry.html" class="btn button">
                     Register Interest
                 </a>
-
             </article>
 
         </section>
 
     </main>
 
-
-    <footer>
-        <p>&copy; 2026 Club Sport Goodwill. All rights reserved.</p>
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Club Sport Goodwill. All rights reserved. Driven for Charity.</p>
     </footer>
+
+    <!-- JavaScript Controller for Mobile Menu -->
+    <script src="script.js"></script>
 
 </body>
 </html>
