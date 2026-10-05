@@ -132,6 +132,8 @@ while maintaining a professional charitable image.
 - Plan the website structure.
 - Develop the visual identity.
 
+---
+
 ### Styling for Desktop Solution
 - For the appropriate CSS Styling, the following colours/themes used for this project would be Red, Black and White, background colour would be Black, Borders in Red, and Fonts in White. The following fonts added will be an Extended/Wide Sans-Serif with high-tech motorsport aesthetic for headings coloured in white  and Modern Sans-Serif for paragraphs also coloured in white.
 
