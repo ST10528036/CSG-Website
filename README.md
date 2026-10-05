@@ -141,13 +141,13 @@ while maintaining a professional charitable image.
 The updated HTML replaces the static navigation bar with an accessible, responsive header featuring a hamburger toggle button and custom ARIA attributes to ensure full screen reader compatibility. To support this functionality, JavaScript event listeners were integrated to dynamically animate the hamburger icon into an "X" close state, toggle menu visibility, prevent background page scrolling when opened, and allow keyboard navigation via the Escape key. Dedicated CSS media queries were added to handle off canvas drawer transitions and hover states using CSG's Red, Black, and White high tech motorsport's theme.
 
 ## Screeshots of Website
-##(Desktop)
+## (Desktop)
 <img width="1888" height="910" alt="Screenshot 2026-10-05 110814_edited" src="https://github.com/user-attachments/assets/f7bb0e53-1b79-4f9d-b4b7-5a8f039e125d" />
 <img width="1887" height="909" alt="Screenshot 2026-10-05 110903_edited" src="https://github.com/user-attachments/assets/a40fc1c0-5d99-48e5-83ee-43f32c10ddab" />
 <img width="1888" height="905" alt="Screenshot 2026-10-05 110941_edited" src="https://github.com/user-attachments/assets/464caa21-74c6-4a0b-ad58-9bcdd2ed13ce" />
 <img width="1884" height="909" alt="Screenshot 2026-10-05 111012_edited" src="https://github.com/user-attachments/assets/ef84d7c6-8ecb-4ccb-a0d4-eb242b65fcfc" />
 
-##(Cellular Screen)
+## (Cellular Screen)
 <img width="274" height="519" alt="Screenshot 2026-10-05 120355_edited" src="https://github.com/user-attachments/assets/6b7a0432-c5b8-446f-9ba9-90dc58c5aff2" />
 <img width="273" height="524" alt="Screenshot 2026-10-05 120424_edited" src="https://github.com/user-attachments/assets/1e0f4502-f80b-4951-9962-aeb1afa42549" />
 <img width="266" height="520" alt="Screenshot 2026-10-05 120509_edited" src="https://github.com/user-attachments/assets/0892b600-c90e-491e-adf6-f192f1ec92da" />
